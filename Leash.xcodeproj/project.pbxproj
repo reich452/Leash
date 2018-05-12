@@ -52,13 +52,69 @@
 		01DE483220A7AB70007FAAE3 /* Leash */ = {
 			isa = PBXGroup;
 			children = (
-				01DE483320A7AB70007FAAE3 /* AppDelegate.swift */,
-				01DE483720A7AB70007FAAE3 /* Main.storyboard */,
-				01DE483A20A7AB71007FAAE3 /* Assets.xcassets */,
-				01DE483C20A7AB71007FAAE3 /* LaunchScreen.storyboard */,
-				01DE483F20A7AB71007FAAE3 /* Info.plist */,
+				01DE484920A7AC05007FAAE3 /* UI */,
+				01DE484820A7ABFE007FAAE3 /* View Controllers */,
+				01DE484720A7ABF5007FAAE3 /* Controllers */,
+				01DE484620A7ABEE007FAAE3 /* Model Controller */,
+				01DE484520A7ABE9007FAAE3 /* Model */,
+				01DE484B20A7AC13007FAAE3 /* HelperFiles */,
+				01DE484A20A7AC0E007FAAE3 /* Resources */,
 			);
 			path = Leash;
+			sourceTree = "<group>";
+		};
+		01DE484520A7ABE9007FAAE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		01DE484620A7ABEE007FAAE3 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		01DE484720A7ABF5007FAAE3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		01DE484820A7ABFE007FAAE3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		01DE484920A7AC05007FAAE3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				01DE483720A7AB70007FAAE3 /* Main.storyboard */,
+				01DE483C20A7AB71007FAAE3 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		01DE484A20A7AC0E007FAAE3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01DE483320A7AB70007FAAE3 /* AppDelegate.swift */,
+				01DE483A20A7AB71007FAAE3 /* Assets.xcassets */,
+				01DE483F20A7AB71007FAAE3 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01DE484B20A7AC13007FAAE3 /* HelperFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HelperFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAN4D79W79;
-				INFOPLIST_FILE = Leash/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Leash/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAN4D79W79;
-				INFOPLIST_FILE = Leash/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Leash/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
