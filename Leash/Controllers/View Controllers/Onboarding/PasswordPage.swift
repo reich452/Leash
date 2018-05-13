@@ -19,7 +19,6 @@ class PasswordPage: UIViewController, OnboardingScreen {
         
         setupUI()
     }
-    
 }
 
 private extension PasswordPage {

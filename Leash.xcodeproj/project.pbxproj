@@ -12,7 +12,6 @@
 		01DE483B20A7AB71007FAAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DE483A20A7AB71007FAAE3 /* Assets.xcassets */; };
 		01DE483E20A7AB71007FAAE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DE483C20A7AB71007FAAE3 /* LaunchScreen.storyboard */; };
 		01DE485020A7B5F0007FAAE3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE484F20A7B5F0007FAAE3 /* Extensions.swift */; };
-		01DE485220A7BBC5007FAAE3 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE485120A7BBC5007FAAE3 /* RootPageViewController.swift */; };
 		01DE485420A7BFEE007FAAE3 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DE485320A7BFEE007FAAE3 /* Onboarding.storyboard */; };
 		01DE485B20A7C726007FAAE3 /* OnboardingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE485A20A7C726007FAAE3 /* OnboardingState.swift */; };
 		01DE485E20A7C9A1007FAAE3 /* SegueHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE485D20A7C9A1007FAAE3 /* SegueHandling.swift */; };
@@ -31,7 +30,6 @@
 		01DE483D20A7AB71007FAAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01DE483F20A7AB71007FAAE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DE484F20A7B5F0007FAAE3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		01DE485120A7BBC5007FAAE3 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		01DE485320A7BFEE007FAAE3 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		01DE485A20A7C726007FAAE3 /* OnboardingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingState.swift; sourceTree = "<group>"; };
 		01DE485D20A7C9A1007FAAE3 /* SegueHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandling.swift; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				01DE486120A7CB0F007FAAE3 /* Onboarding */,
-				01DE485120A7BBC5007FAAE3 /* RootPageViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -260,7 +257,6 @@
 				01DE485E20A7C9A1007FAAE3 /* SegueHandling.swift in Sources */,
 				01DE486720A7CCB5007FAAE3 /* EmailPage.swift in Sources */,
 				01DE486020A7CA99007FAAE3 /* StoryboardInitializable.swift in Sources */,
-				01DE485220A7BBC5007FAAE3 /* RootPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
