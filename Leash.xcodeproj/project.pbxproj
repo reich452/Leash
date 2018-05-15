@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0159988420A9ECF300D1C507 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159988320A9ECF300D1C507 /* Theme.swift */; };
+		0159988620AA7C7500D1C507 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159988520AA7C7500D1C507 /* Constants.swift */; };
 		01DE483420A7AB70007FAAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE483320A7AB70007FAAE3 /* AppDelegate.swift */; };
 		01DE483920A7AB70007FAAE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DE483720A7AB70007FAAE3 /* Main.storyboard */; };
 		01DE483B20A7AB71007FAAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DE483A20A7AB71007FAAE3 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0159988320A9ECF300D1C507 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		0159988520AA7C7500D1C507 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01DE483020A7AB70007FAAE3 /* Leash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DE483320A7AB70007FAAE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DE483820A7AB70007FAAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				01DE484F20A7B5F0007FAAE3 /* Extensions.swift */,
+				0159988320A9ECF300D1C507 /* Theme.swift */,
+				0159988520AA7C7500D1C507 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -249,12 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DE486520A7CBCD007FAAE3 /* SignUpPage.swift in Sources */,
+				0159988620AA7C7500D1C507 /* Constants.swift in Sources */,
 				01DE485020A7B5F0007FAAE3 /* Extensions.swift in Sources */,
 				01DE486320A7CB33007FAAE3 /* Onboarding.swift in Sources */,
 				01DE483420A7AB70007FAAE3 /* AppDelegate.swift in Sources */,
 				01DE485B20A7C726007FAAE3 /* OnboardingState.swift in Sources */,
 				01DE486920A7CD0F007FAAE3 /* PasswordPage.swift in Sources */,
 				01DE485E20A7C9A1007FAAE3 /* SegueHandling.swift in Sources */,
+				0159988420A9ECF300D1C507 /* Theme.swift in Sources */,
 				01DE486720A7CCB5007FAAE3 /* EmailPage.swift in Sources */,
 				01DE486020A7CA99007FAAE3 /* StoryboardInitializable.swift in Sources */,
 			);

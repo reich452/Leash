@@ -32,6 +32,7 @@ class OnboardingState {
         }
         static var all: [Page] = [.signUp, .email, .password]
     }
+
     
     // MARK: - Internal Properties
     

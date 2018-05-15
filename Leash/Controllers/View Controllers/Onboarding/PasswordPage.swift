@@ -25,6 +25,7 @@ private extension PasswordPage {
     
     func setupUI() {
         print("Password page")
+        
         view.backgroundColor = UIColor.purple
     }
     
