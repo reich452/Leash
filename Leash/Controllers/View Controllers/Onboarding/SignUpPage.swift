@@ -13,7 +13,11 @@ class SignUpPage: UIViewController, OnboardingScreen {
     // MARK: - Internal properties
     
     var page: OnboardingState.Page = .signUp
+    var currentPage = OnboardingState(currentPage: .signUp)
+    var allPages = OnboardingState.Page.all
+    weak var delegate: OnboardingPageDelegate?
     
+
     // MARK: - Life Cycle
     
     override func viewDidLoad() {
@@ -23,6 +27,11 @@ class SignUpPage: UIViewController, OnboardingScreen {
         setupConstratins()
         setupInputFields()
         setUpPageControllConstraints()
+  
+        print("Sign up page")
+      
+     
+        
     }
     
     // MARK: - Fields
@@ -33,7 +42,7 @@ class SignUpPage: UIViewController, OnboardingScreen {
         label.textColor = UIColor.leashPurple
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.font = CustomFonts.zapfino.of(size: 32)
-    
+        
         return label
     }()
     
@@ -54,24 +63,6 @@ class SignUpPage: UIViewController, OnboardingScreen {
         return label
     }()
     
-//    let emailTextField: LeashTextField = {
-//        let tf = LeashTextField()
-//        tf.attributedPlaceholder = "sign up with email".attributedString(aligment: .center)
-//        tf.setValue(UIColor.purplePlaceHolder, forKeyPath: Constants.placeHolderPath.rawValue)
-//        tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
-//        tf.borderStyle = .roundedRect
-//        tf.font = UIFont.systemFont(ofSize: 17)
-//        tf.boarderWidth = 1
-//        tf.cornerRadius = 5
-//        tf.boarderColor = UIColor.leashPurple
-//        tf.clipsToBounds = true
-//        tf.backgroundColor = .white
-//        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
-//
-//        return tf
-//    }()
-    
-    
     let emailButton: UIButton = {
         let button = UIButton()
         button.setTitle("sign up with email", for: .normal)
@@ -82,7 +73,7 @@ class SignUpPage: UIViewController, OnboardingScreen {
         button.layer.cornerRadius = 5
         button.clipsToBounds = true
         button.addTarget(self, action: #selector(handleButtonTapped), for: .touchUpInside)
-
+        
         return button
     }()
     
@@ -96,27 +87,9 @@ class SignUpPage: UIViewController, OnboardingScreen {
         return label
     }()
     
-//    let mobileTextField: LeashTextField = {
-//        let tf = LeashTextField()
-//        tf.attributedPlaceholder = "sign up with phone".attributedString(aligment: .center)
-//        tf.setValue(UIColor.purplePlaceHolder, forKeyPath: Constants.placeHolderPath.rawValue)
-//        tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
-//        tf.borderStyle = .roundedRect
-//        tf.font = UIFont.systemFont(ofSize: 17)
-//        tf.boarderWidth = 1
-//        tf.cornerRadius = 5
-//        tf.boarderColor = UIColor.leashPurple
-//        tf.clipsToBounds = true
-//        tf.backgroundColor = .white
-//
-//        tf.addTarget(self, action: #selector(handleTextInputChange), for: .editingChanged)
-//
-//        return tf
-//    }()
-    
     let moibleButton: UIButton = {
         let button = UIButton()
-        button.setTitle("sign up with email", for: .normal)
+        button.setTitle("sign up with phone", for: .normal)
         button.setTitleColor(UIColor.purplePlaceHolder, for: .normal)
         button.backgroundColor = UIColor(white: 1, alpha: 0.5)
         button.layer.borderWidth = 1
@@ -145,17 +118,18 @@ class SignUpPage: UIViewController, OnboardingScreen {
         pc.currentPageIndicatorTintColor = UIColor.leashPurple
         return pc
     }()
+
     
     
     // MARK: - Main
     
-    @objc func handleButtonTapped() {
-        let nextPage = OnboardingState(currentPage: page).nextPage
-        performSegue(withIdentifier: "<#T##String#>", sender: nil)
-        
+    @objc func handleButtonTapped(sender: UIButton) {
+
+       
     }
 
 }
+
 
 private extension SignUpPage {
     
@@ -168,7 +142,7 @@ private extension SignUpPage {
         view.addSubview(leashLabel)
         leashLabel.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 45, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 120, height: 120)
         leashLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-       
+        
         view.addSubview(welcomeLabel)
         welcomeLabel.anchor(top: leashLabel.bottomAnchor, left: nil, bottom: nil, right: nil, paddingTop: 30, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 200, height: 25)
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -204,3 +178,6 @@ extension SignUpPage: StoryboardInitializable {
     
     static var storyboardName: String { return String(describing: Onboarding.self) }
 }
+
+
+

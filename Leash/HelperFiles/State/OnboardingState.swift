@@ -12,6 +12,8 @@ class OnboardingState {
     
     // MARK: - Additional Types
     
+    var counter = 0 
+    
     enum PageType {
         case signUp
         case email
@@ -46,7 +48,7 @@ class OnboardingState {
         switch page {
         case .signUp: page = .signUp
         case .email: page = .signUp
-        case .password: page = .email
+        case .password: page = .signUp
         }
         return page
     }
@@ -60,5 +62,4 @@ class OnboardingState {
         return page
         
     }
-    
 }

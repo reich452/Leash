@@ -11,6 +11,11 @@ import UIKit
 protocol OnboardingScreen where Self: UIViewController {
     var page: OnboardingState.Page { get }
 }
+@objc protocol OnboardingPageDelegate {
+    func goNextPage(forwardTo postion: Int)
+    @objc optional func goPreviousPage(fowardTo position: Int)
+}
+
 
 class Onboarding: UIViewController {
     
@@ -19,16 +24,82 @@ class Onboarding: UIViewController {
     var pageViewController: UIPageViewController!
     var currentPage = OnboardingState(currentPage: .signUp)
     
+    lazy var viewControllersList: [UIViewController] = {
+        return[SignUpPage.initializeFromStoryboard(), EmailPage.initializeFromStoryboard(), PasswordPage.initializeFromStoryboard()]
+    }()
+    
+    
+    let nextButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .red
+        button.tag = 0
+        button.addTarget(self, action: #selector(handleButtonTapped), for: .touchUpInside)
+        
+        return button
+    }()
+    
+    let nextButton2: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .blue
+        button.tag = 1
+        button.addTarget(self, action: #selector(handleButtonTapped), for: .touchUpInside)
+        
+        return button
+    }()
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUpConstraints()
+        
         pageViewController.setViewControllers([SignUpPage.initializeFromStoryboard()], direction: .forward, animated: true, completion: nil)
-        print(SignUpPage.initializeFromStoryboard())
+    }
+    
+    
+    // MARK: - Actions
+    
+    @objc func handleButtonTapped(sender: UIButton) {
+    
+        
+        switch sender {
+        case nextButton:
+        
+            let prevPage = currentPage.page
+            let page = currentPage.nextPage()
+            if prevPage == page { return }
+            guard let vc = createVCFrom(page: page) as? UIViewController else { return }
+            
+            pageViewController.setViewControllers([vc], direction: .forward, animated: true, completion: nil)
+           
+            nextButton.isHidden = true
+            nextButton2.isHidden = false
+            
+        case nextButton2:
+          
+            let prevPage = currentPage.page
+            let page = currentPage.nextPage()
+            if prevPage == page { return }
+            guard let vc = createVCFrom(page: page) as? UIViewController else { return }
+            
+            pageViewController.setViewControllers([vc], direction: .forward, animated: true, completion: nil)
+
+        default:
+            break
+        }
         
     }
-
+    
 }
+
+extension Onboarding: OnboardingPageDelegate {
+    
+    func goNextPage(forwardTo postion: Int) {
+        let viewController = viewControllersList[postion]
+        pageViewController.setViewControllers([viewController], direction: .forward, animated: true, completion: nil)
+    }
+}
+
+// MARK: - Onboarding
 
 extension Onboarding {
     
@@ -70,10 +141,12 @@ extension Onboarding: UIPageViewControllerDataSource {
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        
         let prevPage = currentPage.page
         let page = currentPage.nextPage()
         if prevPage == page { return nil }
         let vc = createVCFrom(page: page)
+        
         return vc as? UIViewController
     }
     
@@ -94,3 +167,26 @@ extension Onboarding: SegueHandling {
 // MARK: - Storyboard Initializable
 
 extension Onboarding: StoryboardInitializable { }
+
+
+// MARK: - Constraints
+
+extension Onboarding {
+    
+    func setUpConstraints() {
+        view.addSubview(nextButton)
+        nextButton.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 310, paddingLeft: 0, paddingBottom: 0, paddingRight: 40, width: 300, height: 60)
+        nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        view.addSubview(nextButton2)
+        nextButton2.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 350, paddingLeft: 0, paddingBottom: 0, paddingRight: 40, width: 300, height: 60)
+        nextButton2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        nextButton2.isHidden = true
+    }
+    
+    
+}
+
+
+
+

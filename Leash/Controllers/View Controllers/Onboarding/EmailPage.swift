@@ -12,7 +12,9 @@ class EmailPage: UIViewController, OnboardingScreen {
     
     // MARK: - Internal properties
     
-    var page: OnboardingState.Page = .signUp
+    var page: OnboardingState.Page = .email
+    var counter = 0
+    weak var delegate: OnboardingPageDelegate?
     
     // MARK: - Life Cycle
     
@@ -23,6 +25,8 @@ class EmailPage: UIViewController, OnboardingScreen {
         setupConstratins()
         setupInputFields()
         setUpPageControllConstraints()
+        print("Email page Was USED!!")
+        
     }
     
     // MARK: - Fields
@@ -46,7 +50,7 @@ class EmailPage: UIViewController, OnboardingScreen {
     
     let emailTextField: LeashTextField = {
         let tf = LeashTextField()
-        tf.attributedPlaceholder = "sign up with email".attributedString(aligment: .center)
+        tf.attributedPlaceholder = "enter email address".attributedString(aligment: .center)
         tf.setValue(UIColor.purplePlaceHolder, forKeyPath: Constants.placeHolderPath.rawValue)
         tf.backgroundColor = UIColor(white: 0, alpha: 0.03)
         tf.borderStyle = .roundedRect
@@ -75,20 +79,10 @@ class EmailPage: UIViewController, OnboardingScreen {
         return button
     }()
     
-
-    let thankYouLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Your pets will thank you"
-        label.textColor = UIColor.leashPurple
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textAlignment = .center
-        return label
-    }()
-    
     let pageControl: UIPageControl = {
         let pc = UIPageControl()
         pc.numberOfPages = OnboardingState.Page.all.count
-        pc.currentPage = 0
+        pc.currentPage = 1
         pc.pageIndicatorTintColor = UIColor.lightGray
         pc.currentPageIndicatorTintColor = UIColor.leashPurple
         return pc
@@ -105,12 +99,14 @@ class EmailPage: UIViewController, OnboardingScreen {
     
     }
     
+    
 }
 
 private extension EmailPage {
     
     private func setupUI() {
     }
+ 
     
     // MARK: - Constraints
     
@@ -132,14 +128,14 @@ private extension EmailPage {
         stackView.spacing = 10
         view.addSubview(stackView)
         
-        stackView.anchor(top: signUpLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 60, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 50)
+        stackView.anchor(top: signUpLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 60, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 90)
     }
     
     private func setUpPageControllConstraints() {
-        let stackView = UIStackView(arrangedSubviews: [pageControl,thankYouLabel])
+        let stackView = UIStackView(arrangedSubviews: [pageControl])
         stackView.distribution = .fillEqually
         stackView.axis = .vertical
-        stackView.spacing = 1
+        stackView.spacing = 20
         view.addSubview(stackView)
         
         stackView.anchor(top: view.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: -80, paddingLeft: 40, paddingBottom: 0, paddingRight: 40, width: 0, height: 50)

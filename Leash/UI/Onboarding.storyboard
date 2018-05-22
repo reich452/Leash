@@ -34,10 +34,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dci-s2-F6a"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Xez-6A-Bw3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYQ-G9-RGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="122"/>
+            <point key="canvasLocation" x="836" y="121.88905547226388"/>
         </scene>
         <!--Sign Up Page-->
         <scene sceneID="lMX-AG-Znh">
@@ -87,10 +88,10 @@
         <!--Page View Controller-->
         <scene sceneID="VQX-8s-2zQ">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="y9U-dZ-VfQ" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="pageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="y9U-dZ-VfQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ppx-eR-5nA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689" y="122"/>
+            <point key="canvasLocation" x="1628" y="121.88905547226388"/>
         </scene>
     </scenes>
 </document>
