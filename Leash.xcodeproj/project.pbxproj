@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0138D5F320B518FF0042EB47 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D5F220B518FF0042EB47 /* Post.swift */; };
+		0138D5F520B51C770042EB47 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0138D5F420B51C770042EB47 /* PostController.swift */; };
 		0159988420A9ECF300D1C507 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159988320A9ECF300D1C507 /* Theme.swift */; };
 		0159988620AA7C7500D1C507 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159988520AA7C7500D1C507 /* Constants.swift */; };
 		01751EE720B3322300A1EA95 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01751EE620B3322300A1EA95 /* OnboardingPageViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		0138D5F220B518FF0042EB47 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0138D5F420B51C770042EB47 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		0159988320A9ECF300D1C507 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		0159988520AA7C7500D1C507 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01751EE620B3322300A1EA95 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		01DE484620A7ABEE007FAAE3 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0138D5F420B51C770042EB47 /* PostController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 				01DE486920A7CD0F007FAAE3 /* PasswordPage.swift in Sources */,
 				01DE485E20A7C9A1007FAAE3 /* SegueHandling.swift in Sources */,
 				0159988420A9ECF300D1C507 /* Theme.swift in Sources */,
+				0138D5F520B51C770042EB47 /* PostController.swift in Sources */,
 				01DE486720A7CCB5007FAAE3 /* EmailPage.swift in Sources */,
 				01DE486020A7CA99007FAAE3 /* StoryboardInitializable.swift in Sources */,
 			);

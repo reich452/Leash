@@ -50,5 +50,5 @@ struct Post {
         self.timestamp = timestamp
 
     }
-      
+    
 }
