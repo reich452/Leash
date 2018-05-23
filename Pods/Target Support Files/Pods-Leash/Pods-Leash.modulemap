@@ -1,0 +1,6 @@
+framework module Pods_Leash {
+  umbrella header "Pods-Leash-umbrella.h"
+
+  export *
+  module * { export * }
+}

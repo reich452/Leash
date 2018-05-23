@@ -10,6 +10,7 @@
 		0159988420A9ECF300D1C507 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159988320A9ECF300D1C507 /* Theme.swift */; };
 		0159988620AA7C7500D1C507 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0159988520AA7C7500D1C507 /* Constants.swift */; };
 		01751EE720B3322300A1EA95 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01751EE620B3322300A1EA95 /* OnboardingPageViewController.swift */; };
+		01751EEA20B514DB00A1EA95 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01751EE920B514DB00A1EA95 /* GoogleService-Info.plist */; };
 		01DE483420A7AB70007FAAE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE483320A7AB70007FAAE3 /* AppDelegate.swift */; };
 		01DE483920A7AB70007FAAE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01DE483720A7AB70007FAAE3 /* Main.storyboard */; };
 		01DE483B20A7AB71007FAAE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DE483A20A7AB71007FAAE3 /* Assets.xcassets */; };
@@ -23,12 +24,14 @@
 		01DE486520A7CBCD007FAAE3 /* SignUpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE486420A7CBCD007FAAE3 /* SignUpPage.swift */; };
 		01DE486720A7CCB5007FAAE3 /* EmailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE486620A7CCB5007FAAE3 /* EmailPage.swift */; };
 		01DE486920A7CD0F007FAAE3 /* PasswordPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DE486820A7CD0F007FAAE3 /* PasswordPage.swift */; };
+		522C15E69D98CD8FC27BDBBA /* Pods_Leash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77D60CB21F4D35813032D855 /* Pods_Leash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0159988320A9ECF300D1C507 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		0159988520AA7C7500D1C507 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		01751EE620B3322300A1EA95 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		01751EE920B514DB00A1EA95 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		01DE483020A7AB70007FAAE3 /* Leash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DE483320A7AB70007FAAE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01DE483820A7AB70007FAAE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +47,9 @@
 		01DE486420A7CBCD007FAAE3 /* SignUpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPage.swift; sourceTree = "<group>"; };
 		01DE486620A7CCB5007FAAE3 /* EmailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailPage.swift; sourceTree = "<group>"; };
 		01DE486820A7CD0F007FAAE3 /* PasswordPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordPage.swift; sourceTree = "<group>"; };
+		77D60CB21F4D35813032D855 /* Pods_Leash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		961EADF50EFF3C398DD34C21 /* Pods-Leash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Leash/Pods-Leash.release.xcconfig"; sourceTree = "<group>"; };
+		F6B8A2A7F013D6FCE05D4CB4 /* Pods-Leash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Leash/Pods-Leash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522C15E69D98CD8FC27BDBBA /* Pods_Leash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,8 @@
 			children = (
 				01DE483220A7AB70007FAAE3 /* Leash */,
 				01DE483120A7AB70007FAAE3 /* Products */,
+				1077A9B416C8ED36D68CC5CB /* Pods */,
+				A625B53E19D9E692EAAB523B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +142,7 @@
 				01DE483320A7AB70007FAAE3 /* AppDelegate.swift */,
 				01DE483A20A7AB71007FAAE3 /* Assets.xcassets */,
 				01DE483F20A7AB71007FAAE3 /* Info.plist */,
+				01751EE920B514DB00A1EA95 /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -185,6 +195,23 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		1077A9B416C8ED36D68CC5CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8A2A7F013D6FCE05D4CB4 /* Pods-Leash.debug.xcconfig */,
+				961EADF50EFF3C398DD34C21 /* Pods-Leash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A625B53E19D9E692EAAB523B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77D60CB21F4D35813032D855 /* Pods_Leash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01DE484220A7AB71007FAAE3 /* Build configuration list for PBXNativeTarget "Leash" */;
 			buildPhases = (
+				CB11EB55612280CBB1D11628 /* [CP] Check Pods Manifest.lock */,
 				01DE482C20A7AB70007FAAE3 /* Sources */,
 				01DE482D20A7AB70007FAAE3 /* Frameworks */,
 				01DE482E20A7AB70007FAAE3 /* Resources */,
+				00490BD96C535D0D0737DEB1 /* [CP] Embed Pods Frameworks */,
+				ED16A0438C844286455E9861 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,11 +276,72 @@
 				01DE483E20A7AB71007FAAE3 /* LaunchScreen.storyboard in Resources */,
 				01DE483B20A7AB71007FAAE3 /* Assets.xcassets in Resources */,
 				01DE483920A7AB70007FAAE3 /* Main.storyboard in Resources */,
+				01751EEA20B514DB00A1EA95 /* GoogleService-Info.plist in Resources */,
 				01DE485420A7BFEE007FAAE3 /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00490BD96C535D0D0737DEB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Leash/Pods-Leash-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Leash/Pods-Leash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB11EB55612280CBB1D11628 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED16A0438C844286455E9861 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Leash/Pods-Leash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01DE482C20A7AB70007FAAE3 /* Sources */ = {
@@ -410,15 +501,13 @@
 		};
 		01DE484320A7AB71007FAAE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B8A2A7F013D6FCE05D4CB4 /* Pods-Leash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAN4D79W79;
 				INFOPLIST_FILE = "$(SRCROOT)/Leash/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesstpeak.Leash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -428,15 +517,13 @@
 		};
 		01DE484420A7AB71007FAAE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 961EADF50EFF3C398DD34C21 /* Pods-Leash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WAN4D79W79;
 				INFOPLIST_FILE = "$(SRCROOT)/Leash/Resources/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wesstpeak.Leash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

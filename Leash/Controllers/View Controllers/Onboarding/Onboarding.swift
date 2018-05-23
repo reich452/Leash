@@ -31,7 +31,6 @@ class Onboarding: UIViewController {
     
     let nextButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .red
         button.tag = 0
         button.addTarget(self, action: #selector(handleButtonTapped), for: .touchUpInside)
         
@@ -40,7 +39,6 @@ class Onboarding: UIViewController {
     
     let nextButton2: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .blue
         button.tag = 1
         button.addTarget(self, action: #selector(handleButtonTapped), for: .touchUpInside)
         
@@ -60,7 +58,6 @@ class Onboarding: UIViewController {
     
     @objc func handleButtonTapped(sender: UIButton) {
     
-        
         switch sender {
         case nextButton:
         
@@ -179,7 +176,7 @@ extension Onboarding {
         nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         view.addSubview(nextButton2)
-        nextButton2.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 350, paddingLeft: 0, paddingBottom: 0, paddingRight: 40, width: 300, height: 60)
+        nextButton2.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 380, paddingLeft: 0, paddingBottom: 0, paddingRight: 40, width: 300, height: 50)
         nextButton2.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         nextButton2.isHidden = true
     }
